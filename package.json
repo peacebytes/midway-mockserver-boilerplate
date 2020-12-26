@@ -1,0 +1,28 @@
+{
+  "name": "midway-boilerplate",
+  "version": "1.0.0",
+  "description": "mock server based on midway",
+  "scripts": {
+    "start": "node ./src/run-mock-server-console.js",
+    "lint": "eslint "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peacebytes/midway-boilerplate.git"
+  },
+  "author": "peacebytes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peacebytes/midway-boilerplate/issues"
+  },
+  "homepage": "https://github.com/peacebytes/midway-boilerplate#readme",
+  "dependencies": {
+    "testarmada-midway": "^1.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2"
+  }
+}
