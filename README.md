@@ -1,7 +1,7 @@
 # midway-boilerplate
 
-Stopped at 
+To be continued
 
-Section: POST
+Section: MockId
 url:
-http://testarmada.io/documentation/Mocking/Native%20iOS/JAVASCRIPT/Training%20Guide/Mocking%20201/Request%20Call%20Information
+http://testarmada.io/documentation/Mocking/Native%20iOS/JAVASCRIPT/Training%20Guide/Mocking%20301/SetMockId
