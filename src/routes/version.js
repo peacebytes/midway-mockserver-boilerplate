@@ -3,7 +3,7 @@ const midway = require('testarmada-midway');
 module.exports = midway.route({
     id: 'version',
     label: 'version information',
-    path: '/version',
+    path: '/api/version',
   
     variantLabel: 'default version',
     handler: function (req, reply) {
@@ -14,7 +14,7 @@ module.exports = midway.route({
       id: 'qa',
       label: 'qa version',
       handler: function (req, reply) {
-        midway.util.respondWithFile(this, reply, {filePath: './message/GET/qa.json', code: 202});
+        midway.util.respondWithFile(this, reply, {filePath: './api/version/GET/qa.json', code: 202});
       }
     })
     .variant({
