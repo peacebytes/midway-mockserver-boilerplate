@@ -23,6 +23,10 @@ module.exports = midway.route({
           city = "Sorry, PC is not handled";
           break;
       }
-      reply({message: `city: ${city}`});
+      if (!city.includes("Thornhill")) {
+        reply({message: `city: ${city}`});
+      } else {
+        midway.util.respondWithFile(this, reply, {filePath: `./api/postalcode/GET/${city}.json`, code: 200});
+      }
     }
   });
