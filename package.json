@@ -4,7 +4,8 @@
   "description": "mock server based on midway",
   "scripts": {
     "start": "node ./src/run-mock-server-console.js",
-    "lint": "eslint "
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "yarn lint --fix"
   },
   "repository": {
     "type": "git",

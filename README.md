@@ -1,7 +1,19 @@
 # midway-boilerplate
 
-To be continued
+To set up
+```
+npm install
+```
 
-Section: MockId
-url:
-http://testarmada.io/documentation/Mocking/Native%20iOS/JAVASCRIPT/Training%20Guide/Mocking%20301/SetMockId
+To check code format
+```
+npm run lint
+```
+
+To start mock server
+```
+npm start
+```
+
+To access Admin to see the list of available mocked endpoints
+Go to: http://localhost:8000/midway

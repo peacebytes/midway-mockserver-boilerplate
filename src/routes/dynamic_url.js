@@ -1,32 +1,35 @@
-const midway = require('testarmada-midway');
+const midway = require("testarmada-midway");
 
 module.exports = midway.route({
-    id: 'dynamic_url',
-    label: 'dynamic url',
-    path: '/api/postalcode/{postal_code}',
-    method: 'GET',
-    variantLabel: 'Get City by Postal Code',
-    handler: function (req, reply) {
-      const pc = req.params.postal_code;
-      let city;
-      switch(pc) {
-        case "M4B":
-          city = "East York";
-          break;
-        case "L3T":
-          city = "Thornhill";
-          break;
-        case "E3B":
-          city = "Fredericton";
-          break;
-        default:
-          city = "Sorry, PC is not handled";
-          break;
-      }
-      if (!city.includes("Thornhill")) {
-        reply({message: `city: ${city}`});
-      } else {
-        midway.util.respondWithFile(this, reply, {filePath: `./api/postalcode/GET/${city}.json`, code: 200});
-      }
+  id: "dynamic_url",
+  label: "dynamic url",
+  path: "/api/postalcode/{postal_code}",
+  method: "GET",
+  variantLabel: "Get City by Postal Code",
+  handler: function (req, reply) {
+    const pc = req.params.postal_code;
+    let city;
+    switch (pc) {
+      case "M4B":
+        city = "East York";
+        break;
+      case "L3T":
+        city = "Thornhill";
+        break;
+      case "E3B":
+        city = "Fredericton";
+        break;
+      default:
+        city = "Sorry, PC is not handled";
+        break;
     }
-  });
+    if (!city.includes("Thornhill")) {
+      reply({ message: `city: ${city}` });
+    } else {
+      midway.util.respondWithFile(this, reply, {
+        filePath: `./api/postalcode/GET/${city}.json`,
+        code: 200,
+      });
+    }
+  },
+});

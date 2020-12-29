@@ -1,5 +1,5 @@
-const midway = require('testarmada-midway');
-midway.id('midway-boilerplate');
+const midway = require("testarmada-midway");
+midway.id("midway-boilerplate");
 
 const endpoints = {
   healthcheck: require("./routes/healthcheck"),
@@ -10,4 +10,4 @@ const endpoints = {
   post: require("./routes/post_request"),
   replysetheaders: require("./routes/replysetheaders"),
   replysetcookies: require("./routes/replysetcookies")
-}
+};
